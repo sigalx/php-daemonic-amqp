@@ -1,0 +1,21 @@
+{
+    "name": "sigalx/php-daemonic-amqp",
+    "description": "Simple and powerful tools to listen and process messages from AMQP queues with PHP daemonic library in your own PHP-application",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Shcheglov",
+            "email": "sigalx@sigalx.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-amqp": "*",
+        "sigalx/php-daemonic": "dev-master",
+        "sigalx/php-amqpio": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"sigalx\\Daemonic\\": "src/"}
+    }
+}
