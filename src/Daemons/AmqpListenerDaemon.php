@@ -95,6 +95,7 @@ abstract class AmqpListenerDaemon extends AbstractDaemon
         if (!parent::_init()) {
             return false;
         }
+        $this->setCyclesBeforeDie(1000);
         if (!$this->_instanceName) {
             $this->_instanceName = AmqpIo::$instanceName;
         }
