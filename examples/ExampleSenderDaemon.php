@@ -1,7 +1,5 @@
 <?php
 
-include_once(__DIR__ . '/../vendor/sigalx/php-daemonic/src/Daemons/AbstractDaemon.php');
-
 class ExampleSenderDaemon extends \sigalx\Daemonic\Daemons\AbstractDaemon
 {
     protected $_n = 1;

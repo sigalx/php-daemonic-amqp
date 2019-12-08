@@ -4,9 +4,6 @@ namespace sigalx\Daemonic\Daemons;
 
 use sigalx\amqpio\AmqpIo;
 
-include_once(__DIR__ . '/../../vendor/sigalx/php-daemonic/src/Daemons/AbstractDaemon.php');
-include_once(__DIR__ . '/../../vendor/sigalx/php-amqpio/src/AmqpIo.php');
-
 abstract class AmqpListenerDaemon extends AbstractDaemon
 {
     /** @var string */
